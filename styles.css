@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(fit.webp);
+    color: #333333; /* Darker gray for better readability */
+    line-height: 1.6;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Header */
+header {
+    background-color: #2C3E50; /* Dark slate blue */
+    color: #FFFFFF; /* White text */
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigation Links */
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #E67E22; /* Carrot orange for hover effect */
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sections */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button, .btn-primary {
+    padding: 10px 20px;
+    background-color: #2980B9; /* Deep blue for primary buttons */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .btn-primary:hover {
+    background-color: #E74C3C; /* Bright red for hover */
+}
+
+/* Welcome Section */
+#welcome {
+    text-align: center;
+}
+#welcome button {
+    margin-top: 15px;
+}
+
+/* Featured Workouts */
+#featured-workouts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.workout-card {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.workout-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.workout-card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333333;
+}
+
+.workout-card p {
+    font-size: 0.9em;
+    color: #555555;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: #F2F4F7; /* Light gray */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.testimonial span {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Achievements Section */
+#achievements {
+    background-color: #EAF2F8; /* Light blue */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Newsletter */
+#newsletter {
+    background-color: #8E44AD; /* Rich purple */
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#newsletter input {
+    padding: 8px;
+    width: 80%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #8E44AD;
+    border-radius: 5px;
+}
+
+#newsletter button:hover {
+    background-color: #E0E0E0;
+}
+
+/* Tracker and Goal Sections */
+#activity-tracker, #activity-summary, #goal-setting, #goals-list {
+    background-color: #F9F9F9; /* Light gray */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#activity-tracker h2, #activity-summary h2, #goal-setting h2, #goals-list h2 {
+    color: #2980B9; /* Deep blue for headings */
+    font-size: 1.6em;
+}
+
+.goal-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #EAF2F8;
+    border-radius: 5px;
+}
+
+.goal-entry p {
+    margin: 0;
+}
+
+.goal-entry .btn-complete {
+    padding: 5px 10px;
+    background-color: #27AE60; /* Green */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.goal-entry .btn-complete:hover {
+    background-color: #229954; /* Darker green for hover */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: #2980B9; /* Deep blue for focus */
+    box-shadow: 0 0 4px rgba(41, 128, 185, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333333; /* Dark gray */
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-size: 0.9em;
+}

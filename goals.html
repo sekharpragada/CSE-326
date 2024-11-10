@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Freak - Goals</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Goals</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="track.html">Track</a>
+        <a href="goals.html">Goals</a>
+        <a href="progress.html">Progress</a>
+        <a href="diet.html">Diet</a>
+        <a href="workouts.html">workouts</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="goal-setting" class="fade-in">
+        <h2>Set Your Fitness Goals</h2>
+        <p>
+          Define clear and achievable goals to stay motivated. You can add new
+          goals and track their completion below.
+        </p>
+
+        <form id="goal-form">
+          <label for="goal">Goal Description:</label>
+          <input
+            type="text"
+            id="goal"
+            name="goal"
+            placeholder="E.g., Run 5 km in 30 minutes"
+            required
+          />
+
+          <label for="target-date">Target Date:</label>
+          <input type="date" id="target-date" name="target-date" required />
+
+          <button type="submit" class="btn-primary">Add Goal</button>
+        </form>
+      </section>
+      <section id="goals-list">
+        <h2>Your Goals</h2>
+        <div id="goal-items">
+          <p>
+            No goals added yet. Start setting your goals to keep yourself on
+            track!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Track Freak</p>
+    </footer>
+
+    <script src="goals.js"></script>
+  </body>
+</html>

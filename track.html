@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Freak - Track</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Track Your Progress</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="track.html">Track</a>
+        <a href="goals.html">Goals</a>
+        <a href="progress.html">Progress</a>
+        <a href="diet.html">Diet</a>
+        <a href="workouts.html">workouts</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="activity-tracker" class="fade-in">
+        <h2>Track Your Activities</h2>
+        <p>
+          Log your workouts and keep track of your progress every day. Fill in
+          the details below to monitor your journey.
+        </p>
+
+        <form id="activity-form" >
+          <label for="activity">Activity Type:</label>
+          <select id="activity" name="activity" required>
+            <option value="running">Running</option>
+            <option value="cycling">Cycling</option>
+            <option value="weightlifting">Weightlifting</option>
+            <option value="yoga">Yoga</option>
+            <option value="swimming">Swimming</option>
+          </select>
+
+          <label for="duration">Duration (minutes):</label>
+          <input type="number" id="duration" name="duration" min="1" required />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <button type="submit" class="btn-primary">Log Activity</button>
+        </form>
+      </section>
+
+      <section id="activity-summary">
+        <h2>Activity Summary</h2>
+        <div id="activity-list">
+          <p>No activities logged yet. Start tracking to see your progress!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Track Freak</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
